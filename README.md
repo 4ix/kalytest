@@ -1,6 +1,6 @@
 
 
-## 2020-08-18
+## 2020-08-18(월)
 
 1. create-react-app으로 생성
 2. truffle init으로 생성
