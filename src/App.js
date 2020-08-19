@@ -41,7 +41,6 @@ class App extends Component {
     if (klaytn === undefined) return;
     await new Promise((resolve, reject) => setTimeout(resolve, 500));
     const account = klaytn.selectedAddress;
-    console.log(account)
     const balance = await caver.klay.getBalance(account);
     this.setState({
       account,
