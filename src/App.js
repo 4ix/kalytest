@@ -3,6 +3,7 @@ import caver from "./klaytn/caver";
 
 import WalletInfo from "./components/WalletInfo";
 import Staking from "./components/Staking";
+import Sending from "./components/send";
 
 class App extends Component {
   constructor(props) {
@@ -68,11 +69,12 @@ class App extends Component {
 
         <WalletInfo address={account} balance={balance} />
 
-          {account.length !== 0 &&
+          {/* {account.length !== 0 && */}
           
-          <Staking address={account} balance={balance} />
+          <Staking address={account} balance={balance} /> 
+          <Sending address={account} />
 
-      }
+      {/* } */}
       </div>
     );
   }
